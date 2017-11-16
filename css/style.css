@@ -242,9 +242,9 @@ header .hero {
    font-style: italic;
  }
 
-  /* TESTIMONIALS */
+/* TESTIMONIALS */
  .testimonials {
-   padding: 4em 0;
+   padding:4em 0;
    text-align: center;
  }
  .testimonials h2 {
