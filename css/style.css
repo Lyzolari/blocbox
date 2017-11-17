@@ -299,12 +299,20 @@ header .hero {
 
 /* CALL TO ACTION */
 .call-to-action {
-height: 200 px;
-background-color: #f0f9ff;
-padding:4em 0;
-text-align: center;
+   height: 200 px;
+   background-color: #eaf4fa;
+   padding:4em 0;
+   text-align: center;
  }
 
+.call-to-action h2 { color: #3498DB; ; 
+  }
+
+.call-to-action p { 
+   color: #000000; 
+   margin-bottom: 45px;
+   }
+ 
  .btn {
    border-radius: 4px;
    color:#FFFFFF;
