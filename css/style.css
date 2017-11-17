@@ -19,6 +19,7 @@
    font-weight: 100;
  }
 
+
  /* GRID */
  .container {
    margin-right: auto;
@@ -35,6 +36,8 @@
  .container:after {
    clear: both;
  }
+
+
  .one-half, .one-third, .one-fourth {
    width:96%;
    float:left;
@@ -44,6 +47,18 @@
  }
 
 /* MEDIA DEVICES */
+
+@media (min-width: 320, max-width: 992) {
+   .signin {
+      position: absolute;
+      margin: : -100px;
+    }
+
+    .signup {
+      position: absolute; 
+      margin: -100px;
+    }
+}
 
 @media only screen and (min-width: 320px) {
     aside {
@@ -191,12 +206,16 @@ header .hero {
    box-shadow: 0px 2px 0px 0px #22894E;
  }
 
+
+
  /* BENEFITS */
+ 
  .benefits {
    text-align: center;
-   display:block;
+   display: block;
    position:relative;
  }
+
  .benefits ul {
    margin: 0 auto;
    padding:4em 0;
