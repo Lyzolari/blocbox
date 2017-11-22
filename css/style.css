@@ -23,6 +23,13 @@
    line-height: 19px;
    font-weight: 100;
  }
+ 
+ img {
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 35px;
+}
+
 
  /* GRID */
  .container {
