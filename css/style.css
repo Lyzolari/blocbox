@@ -525,6 +525,7 @@ footer {
  .left-nav .items {
    padding:0 6%;
  }
+
  .left-nav .items p {
    font-weight: 600;
    text-transform: uppercase;
@@ -549,6 +550,10 @@ footer {
    width:16px;
    text-align: center;
    margin-right:8px;
+ }
+
+ .left-nav .active {
+    background-color: #e6f7ff;
  }
 
   /* LEFT NAVBAR SETTINGS */
