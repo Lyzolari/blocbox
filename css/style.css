@@ -25,7 +25,7 @@
  }
  
  img {
-    width: 100%;
+    width: auto;
     white-space: nowrap;
     padding-top: 35px;
 }
@@ -51,158 +51,19 @@
    clear: both;
  }
 
- .one-half, .one-third, .one-fourth {
-   width:96%;
-   float:left;
+ .one-half, .one-third, .one-fourth, .two-third{
+   box-sizing: border-box;
+   display: inline-block;
    position:relative;
    min-height: 1px;
-   margin:0 2% 20px;
+   padding:0 2% 20px;
+   vertical-align: top;
   }
 
+.one-half {
+  width: 49%;
+}
  
-/* MEDIA DEVICES */
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .one-half {
-    width:46%;
-  }
-  .one-third {
-    width:29.33333%;
-  }
-  .one-fourth {
-    width:21%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-
-
-
-
-@media (min-width: 320, max-width: 992) {
-   
-   .signin {
-      position: absolute;
-      margin-right: : 0px;
-      margin-left: 0px;
-      display: inline-block;
-      padding-left: 0px;
-    }
-
-    .signup {
-      position: absolute; 
-      margin-right: 0px;
-      margin-left: 0px;
-      display: inline-block;
-    }
-    .one-half {
-      margin-left: 0px;
-    }
-
-    .btn-outline {
-      margin: 0px;
-      padding: 0px
-    }
-    .one-third{
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .box {
-      margin: 43m, opx;
-      position: 10px;
-    }
-}
-
-@media only screen and (min-width: 320px) {
-    
-    aside {
-        display: none;
-
-    }
-
-    section.showslisting {
-        width: 100%;
-    }
-
-    .showdescription {
-        display: none;
-    }
-
-}
-
-/* For example, newer phones */
-@media only screen and (min-width: 480px) {
-
-}
-
-/* For example, small computer screens and larger tablets */
-@media only screen and (min-width: 768px) {
-    .showdescription {
-        text-overflow: ellipsis;
-        display: block;
-        white-space: nowrap;
-        width: 100px;
-        overflow: hidden;
-    }
-}
-
-/* For example, typical desktop monitors or larger tablet devices */
-@media only screen and (min-width: 992px) {
-    aside {
-        width: 33%;
-        display: block;
-    }
-
-    section.showslisting {
-        width: 66%;
-    }
-
-    .showdescription {
-        white-space: normal;
-        width: 125px;
-    }
-}
-
-/* Large Devices, for example large monitors and TVs */
-@media only screen and (min-width: 1200px) {
-}
-
-@media (min-width: 768px) {
-   .container {
-     width: 768px;
-   }
- }
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
- }
- @media (min-width: 1200px) {
-   .container {
-     width: 1200px;
-   }
- }
 
  /* HEADER */
 
@@ -441,9 +302,6 @@ header .hero {
    margin-top: 25px;
  }
 
-.drop-low {
-   margin-top: 50px;
-}
 
 /* CALL TO ACTION */
 .call-to-action {
@@ -479,8 +337,6 @@ header .hero {
  /* FOOTER */
 footer {
    background-color: #34495E;
-   background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
    color: #FFFFFF;
    height: 125px;
    position: relative;
@@ -513,35 +369,8 @@ footer {
  }
 
  footer .logo{
-   margin-bottom: 300px;
-   display: inline;
-   position: right;
  }
 
-@media (min-width: 992px){
-   footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-     width: auto;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
-  
-   footer .logo{
-     padding: 2px 2px 2px;
-     width: auto;
-     margin: 20px 0 20px 0;
-     display: inline;
-     
-   }
- }
 
 /* DASHBOARD */
 .dashboard {
@@ -590,75 +419,6 @@ footer {
   border-radius: 4px;
   left: 5px;
   top: 15px;
-}
-@media (min-width:992px) {
-  .left-nav {
-    height: 100vh;
-    width:14.66666667%;
-    color:#FFFFFF;
-    background: #043A5D;
-    background-image: linear-gradient(206deg, #0878A2 0%, #043A5D 94%);
-    float:left;
-    position: fixed;
-    display:block;
-    transform: translate(0,0);
-    -webkit-transform: translate(0,0); /** Chrome & Safari **/
-    -o-transform: translate(0,0); /** Opera **/
-    -moz-transform: translate(0,0); /** Firefox **/
-  }
-  .left-nav.open {
-    width:14.66666667%;
-    transform: translate(0,0);
-    -webkit-transform: translate(0,0); /** Chrome & Safari **/
-    -o-transform: translate(0,0); /** Opera **/
-    -moz-transform: translate(0,0); /** Firefox **/
-  }
-  .hamburger {
-    display:none;
-  }
-}
-.left-nav .site-logo {
-  padding:20px 10px;
-  background:#072d44;
-  display:block;
-  text-align: center;
-}
-.left-nav .site-logo img {
-  width: 80%;
-}
-.left-nav .items {
-  padding: 0 6%
-}
-.left-nav .items p {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #E2E2E2;
-  line-height: 15px;
-}
-.left-nav .items ul {
-  margin:0 0 10px;
-  padding: 10px 0 10px 10px;
-  text-align: left;
-}
-.left-nav .items ul li {
-  list-style-type: none;
-  margin-bottom: 15px;
-}
-.left-nav .items ul li a {
-  color:#FFFFFF;
-  text-decoration: none;
-  font-weight: 100;
-}
-.active {
-  background-color: #15A9E0;
-  position: relative;
-  width: 100%;
-  margin-left: -20px;
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 
 /* LEFT NAVBAR SETTINGS */
@@ -731,7 +491,160 @@ footer {
    position: relative;
    overflow: hidden;
    padding:20px;
+
  }
+
+
+ /* MEDIA DEVICES */
+
+
+@media (min-width: 320) {
+   
+   .signin {
+      position: absolute;
+      margin-right: : 0px;
+      margin-left: 0px;
+      display: inline-block;
+      padding-left: 0px;
+    }
+
+    .signup {
+      position: absolute; 
+      margin-right: 0px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .one-half {
+      margin-left: 0px;
+    }
+
+    .btn-outline {
+      margin: 0px;
+      padding: 0px
+    }
+    .one-third{
+      vertical-align: baseline;
+    }
+
+    .box {
+      margin: 43m, opx;
+      position: 10px;
+    }
+
+    aside {
+        display: none;
+
+    }
+
+    section.showslisting {
+        width: 100%;
+    }
+
+    .showdescription {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+  
+  .container {
+    width: 768px;
+   }
+  .one-half {
+    width:46%;
+  }
+  .one-fourth {
+    width:21%;
+  }
+
+  .two-third {
+    width: 70%;
+    text-align: center;
+  }
+
+  .showdescription {
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+    }
+
+   .up {
+    bottom: 30px;
+   }
+
+   footer{
+     background-color: #3498DB;
+     height: 100px;
+     width: auto;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #3498DB;
+     padding-left:142px;
+   }
+  
+   footer .logo{
+     padding: 2px 2px 2px;
+     width: auto;
+     margin: 20px 0 20px 0;
+     display: inline;
+     
+   }
+}
+
+
+
+/* For example, typical desktop monitors or larger tablet devices */
+@media only screen and (min-width: 992px) {
+    aside {
+        width: 33%;
+        display: block;
+    }
+
+    section.showslisting {
+        width: 66%;
+    }
+
+    .showdescription {
+        white-space: normal;
+        width: 125px;
+    }
+
+    .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+}
+
+
+
+@media (min-width: 768px) {
+   
+ }
+ @media (min-width: 992px) {
+   
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1200px;
+   }
+ }
+
+
 /* Larger Mobile Devices */
  @media (min-width:460px) {
    .content {
@@ -778,6 +691,10 @@ footer {
      width:23%;
      margin:0 1% 25px;
    }
+   .drop-low {
+    margin-top: 50px;
+    margin-left: 50px;
+    }
  }
 
  .item-box > img {
